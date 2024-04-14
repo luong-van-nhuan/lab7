@@ -1,13 +1,11 @@
 package Ex1;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 	public static Scanner sc = new Scanner(System.in);
+
 	public static void main(String[] args) {
-		List<Book> booklist = new ArrayList<>();
 		int choose = 0;
 		do {
 			System.out.println("1. More books");
@@ -19,14 +17,24 @@ public class Main {
 			System.out.println("Enter choose");
 			choose = sc.nextInt();
 			sc.nextLine();
-			switch(choose) {
-			case 1 :
-				
-			case 5: 
-				
+			switch (choose) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 0:
+				System.out.println("Good bye");
+				break;
+			default:
+				System.out.println("Error!!!");
 			}
 		} while (choose != 0);
-	
-		
+
 	}
 }
