@@ -6,6 +6,8 @@ public class Main {
 	public static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		LibraryItself libraryItself = new LibraryItself();
+		Book book = new Book();
 		int choose = 0;
 		do {
 			System.out.println("1. More books");
@@ -19,14 +21,20 @@ public class Main {
 			sc.nextLine();
 			switch (choose) {
 			case 1:
+				libraryItself.addBook();
 				break;
 			case 2:
+				libraryItself.deleteBook();
 				break;
 			case 3:
 				break;
 			case 4:
 				break;
 			case 5:
+				book.title();
+				libraryItself.bookAvailable();
+				libraryItself.showBook();
+				
 				break;
 			case 0:
 				System.out.println("Good bye");
