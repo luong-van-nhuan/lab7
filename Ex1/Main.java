@@ -34,7 +34,6 @@ public class Main {
 				book.title();
 				libraryItself.bookAvailable();
 				libraryItself.showBook();
-				
 				break;
 			case 0:
 				System.out.println("Good bye");

@@ -32,8 +32,8 @@ public class LibraryItself {
 		books[5] = new Book("ms6", "Cho tôi xin một vé đi tuổi thơ", "Nguyễn Nhật Ánh", true);
 		books[6] = new Book("ms7", "Tôi thấy hoa vàng trên cỏ xanh", "Nguyễn Nhật Ánh", true);
 		books[7] = new Book("ms8", "Tôi tự học", "Nguyễn Duy Cần", true);
-		for (int i = 0; i < books.length; i++) {
-			if (books[i] != null) {
+		for(int i = 0; i < books.length; i++) {
+			if(books[i] != null) {
 				books[i].output();
 			}
 		}
@@ -58,7 +58,6 @@ public class LibraryItself {
 		for (int i = 0; i < currentBookNumber; i++) {
 			if (books[i] != null && books[i].getBookCode().equals(bookCode)) {
 				books[i] = null;
-
 			}
 		}
 	}
