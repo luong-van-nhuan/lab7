@@ -6,7 +6,7 @@ public class LibraryItself {
 	private Book[] books;
 	private LibraryMember[] libraryMembers;
 	private BorrowBook[] borrowBooks;
-	private static int currentBookNumber;
+	private static int currentBookNumber = 8;
 	private String bookCode;
 	private String memberCode;
 
@@ -32,11 +32,14 @@ public class LibraryItself {
 		books[5] = new Book("ms6", "Cho tôi xin một vé đi tuổi thơ", "Nguyễn Nhật Ánh", true);
 		books[6] = new Book("ms7", "Tôi thấy hoa vàng trên cỏ xanh", "Nguyễn Nhật Ánh", true);
 		books[7] = new Book("ms8", "Tôi tự học", "Nguyễn Duy Cần", true);
-		for(int i = 0; i < books.length; i++) {
-			if(books[i] != null) {
+		for (int i = 0; i < books.length; i++) {
+			if (books[i] != null) {
 				books[i].output();
+				return;
 			}
+			
 		}
+		return;
 	}
 
 	public void addBook() {
@@ -63,11 +66,9 @@ public class LibraryItself {
 	}
 
 	public void borrowBooks() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the book code you want to borrow");
-		bookCode = sc.nextLine();
-		System.out.println("Enter the name of the member borrowing the book");
-		memberCode = sc.nextLine();
+		BorrowBook borrowBook = new BorrowBook();
+		borrowBook.input();
+		
 	}
 
 	public void showBook() {

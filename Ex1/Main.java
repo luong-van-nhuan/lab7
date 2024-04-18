@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Main {
 	public static Scanner sc = new Scanner(System.in);
-
 	public static void main(String[] args) {
 		LibraryItself libraryItself = new LibraryItself();
 		Book book = new Book();
@@ -27,6 +26,7 @@ public class Main {
 				libraryItself.deleteBook();
 				break;
 			case 3:
+				libraryItself.borrowBooks();
 				break;
 			case 4:
 				break;
